@@ -18,7 +18,7 @@ From the original description:
 
 
 ## Relevant Raw Data Files
-The raw data was split into multiple files:
+The provided raw data is split into multiple files:
 
 * Training Data (folder train/)
     * <code>train/X_train.txt</code> - Training Data
@@ -68,6 +68,8 @@ From the original <code>features_info.txt</code> description:
 >
 >These signals were used to estimate variables of the feature vector for each pattern:  
 >'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+The Features are normalized and bounded within [-1,1].
 
 The tidy data frames <code>data_merged</code> and <code>data_averages</code> contain the following columns:
 
