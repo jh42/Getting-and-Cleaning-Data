@@ -4,21 +4,21 @@
 setwd("F:/mooc/dstrack/03_getting_cleaning_data/dataset")
 
 #read all relevant files into memory
-training_data <- read.table("train/X_train.txt")   #x_train
-training_labels <- read.table("train/y_train.txt") #y_train
-training_subjects <- read.table("train/subject_train.txt") #subject_train
+training_data <- read.table("train/X_train.txt")
+training_labels <- read.table("train/y_train.txt")
+training_subjects <- read.table("train/subject_train.txt")
 
-test_data <- read.table("test/X_test.txt") #x_test
-test_labels <-  read.table("test/y_test.txt") #y_test
-test_subjects <-  read.table("test/subject_test.txt") #subject_test
+test_data <- read.table("test/X_test.txt")
+test_labels <-  read.table("test/y_test.txt")
+test_subjects <-  read.table("test/subject_test.txt")
 
 features <- read.table("features.txt")
 activities <- read.table("activity_labels.txt")
 
 #merge training and test data frames
-data_merged <- rbind(training_data, test_data) #x_data
-labels_merged <- rbind(training_labels, test_labels) #y_data
-subjects_merged <- rbind(training_subjects, test_subjects) #subject_data
+data_merged <- rbind(training_data, test_data)
+labels_merged <- rbind(training_labels, test_labels)
+subjects_merged <- rbind(training_subjects, test_subjects)
 
 #create logical vector of feature names containing "mean" or "std"
 features_mean_std <- grepl("mean|std", features[,2])
