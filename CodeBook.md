@@ -1,6 +1,5 @@
 # Getting and Cleaning Data
 # Course Project - Codebook
-<br />
 
 ## Data Source
 The source data was provided by the experiment "Human Activity Recognition Using Smartphones Dataset" conducted by Smartlab (University of Genova, Italy). 
